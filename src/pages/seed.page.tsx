@@ -1,5 +1,5 @@
-import { Button, Container, Divider, Table, TableCaption, TableContainer, Tbody, Td, Tfoot, Th, Thead, Tr } from '@chakra-ui/react'
-import React, { useState } from 'react'
+import { Button, Container, Divider, Table, TableCaption, TableContainer, Tbody, Td, Th, Thead, Tr } from '@chakra-ui/react'
+import { useState } from 'react'
 import { Product, ProductType } from '../db/product.db';
 import { seedDB } from '../db/seed';
 
