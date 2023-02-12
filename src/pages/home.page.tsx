@@ -73,6 +73,8 @@ const Home = () => {
 
   const total = useMemo(() => basket.reduce((acc, item) => (item.count * item.price) + acc, 0), [basket])
 
+  const handleReset = () => setBasket([]);
+
   return (
     <Box py={10}>
       <Container textAlign="center" fontSize="xl">
@@ -104,6 +106,7 @@ const Home = () => {
           })
           }
         </Grid>
+        <Button colorScheme={'red'} onClick={handleReset}>Reset</Button>
       </Container>
     </Box>
   )
